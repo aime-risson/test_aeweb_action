@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  deploy_to_aeweb:
+    runs-on: ubuntu-latest
+    name: A job to deploy file to aeweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy to aeweb
+        id: deploy
+        uses: aime-risson/deploy-aeweb-github-action
+        with:
+            seed: 'zgrzrgezrgerg' #Sedd should not be hard coded
+            endpoint: 'https://mainnet.archethic.net'
+            path: './logo.png'
+      # Use the output from the `hello` step
+      - name: Get the url
+        run: echo "File/folder url ${{ steps.deploy.outputs.transaction-address }}"
