@@ -10,7 +10,7 @@ jobs:
 
       - name: Deploy to aeweb
         id: deploy
-        uses: aime-risson/deploy-aeweb-github-action@v1.1.5
+        uses: aime-risson/deploy-aeweb-github-action@v1.1.6
         with:
             seed: 'zgrzrgezrgerg' #Sedd should not be hard coded
             endpoint: 'https://mainnet.archethic.net'
