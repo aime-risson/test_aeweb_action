@@ -10,10 +10,10 @@ jobs:
 
       - name: Deploy to aeweb
         id: deploy
-        uses: aime-risson/deploy-aeweb-github-action@v1.2.1
+        uses: aime-risson/deploy-aeweb-github-action@v1.2.2
         with:
-            seed: 'zgrzrgezrgerg' #Sedd should not be hard coded
-            endpoint: 'https://mainnet.archethic.net'
+            seed: 'testeteaaaate' #Sedd should not be hard coded
+            endpoint: 'https://testnet.archethic.net'
             path: './logo.png'
       # Use the output from the `hello` step
       - name: Get the url
