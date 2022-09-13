@@ -12,7 +12,7 @@ jobs:
         id: deploy
         uses: aime-risson/deploy-aeweb-github-action@v1.3.0
         with:
-            seed: 'myseed' #Sedd should not be hard coded
+            seed:  ${{ secrets.ARCH_BASE_SEED }} #Sedd should not be hard coded
             endpoint: 'https://testnet.archethic.net'
             path: './logo.png'
       # Use the output from the `hello` step
