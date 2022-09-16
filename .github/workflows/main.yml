@@ -14,7 +14,7 @@ jobs:
         with:
             seed: ${{ secrets.ARCH_BASE_SEED }} #Seed should not be hard coded
             endpoint: 'https://testnet.archethic.net'
-            path: './logo.png'
+            path: './web_site_test'
       # Use the output from the `  deploy_to_aeweb` step
       - name: Get the url
         run: echo "File/folder url ${{ steps.deploy.outputs.transaction-address }}"
