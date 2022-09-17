@@ -15,6 +15,7 @@ jobs:
             seed: ${{ secrets.ARCH_BASE_SEED }} #Seed should not be hard coded
             endpoint: 'https://testnet.archethic.net'
             path: './web_site_test/roll.mp4'
+
       # Use the output from the `deploy_to_aeweb` step
       - name: Get the url
         run: echo "File/folder url ${{ steps.deploy.outputs.transaction-address }}"
